@@ -1,0 +1,86 @@
+*{
+    margin:0px; 
+    padding:0px; 
+}
+.body{
+    background-color: black;
+}
+.textMode{
+    color:white; 
+}
+.youtubeLogo{
+    color: red;
+    font-size: 25px;
+}
+.youtubeTextLogo{
+    margin-left: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+#default-input{
+    width:500px; 
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    outline: none;
+    /* border: none; */
+}
+#default-input:focus{
+    border: 1px solid #ccc; 
+}
+#default-input::placeholder{
+    color:black; 
+    opacity: 1;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.searchIcon{
+    width: 55px;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.searchLogo{
+    color:#7e7d7d; 
+    cursor: pointer;
+}
+.toogler{
+    position: absolute;
+    left:20px; 
+    top: 20px;
+    font-size: 20px;
+}
+.toogler:hover{
+    cursor:pointer; 
+}
+.listItems{
+    /* border: 2px solid black; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.sideCartItems{
+    color:black; 
+    margin-right:10px;
+}
+.sideCartText{
+    color:black; 
+    margin-left:10px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* media queries  */
+
+@media screen and (max-width: 817px) {
+    .cardContainer{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cards{
+        width:60%; 
+    }
+}
+

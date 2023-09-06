@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <!-- my style sheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesomne cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id = "body">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap pt-2 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <!-- <i class="toogler fa-solid fa-bars"></i> -->
+            <i class="youtubeLogo fa-brands fa-youtube"></i>
+            <span class="youtubeTextLogo text-lg">YouTube</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <div class="flex">
+                <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"placeholder = "Search" spellcheck="false">
+                <div class="searchIcon flex justify-center items-center">
+                    <i class="searchLogo fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class = "flex justify-center">
+        <section class=" text-gray-600 body-font">
+          <div class="container  py-5 mx-auto">
+            <div class="cardContainer template flex flex-wrap "></div>
+          </div>
+        </section>
+      </main>
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
