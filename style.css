@@ -45,42 +45,13 @@
     color:#7e7d7d; 
     cursor: pointer;
 }
-.toogler{
-    position: absolute;
-    left:20px; 
-    top: 20px;
-    font-size: 20px;
-}
-.toogler:hover{
-    cursor:pointer; 
-}
-.listItems{
-    /* border: 2px solid black; */
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-}
-.sideCartItems{
-    color:black; 
-    margin-right:10px;
-}
-.sideCartText{
-    color:black; 
-    margin-left:10px; 
-    font-family: 'Poppins', sans-serif;
-}
+
 
 /* media queries  */
 
 @media screen and (max-width: 817px) {
     .cardContainer{
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .cards{
-        width:60%; 
     }
 }
 

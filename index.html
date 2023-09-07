@@ -20,24 +20,25 @@
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body id = "body">
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap pt-2 flex-col md:flex-row items-center">
+<body>
+    <header class="text-gray-600 body-font pb-2">
+        <div class="container flex justify-center mx-auto pt-2 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <!-- <i class="toogler fa-solid fa-bars"></i> -->
             <i class="youtubeLogo fa-brands fa-youtube"></i>
             <span class="youtubeTextLogo text-lg">YouTube</span>
           </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <div class="flex">
-                <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"placeholder = "Search" spellcheck="false">
-                <div class="searchIcon flex justify-center items-center">
-                    <i class="searchLogo fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-          </nav>
         </div>
       </header>
+
+      <form>   
+        <div class="relative flex justify-center">
+          <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"placeholder = "Search" spellcheck="false">
+          <div class="searchIcon flex justify-center items-center flex-col">
+            <i class="searchLogo fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </form>
 
       <main class = "flex justify-center">
         <section class=" text-gray-600 body-font">

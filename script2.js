@@ -2,14 +2,13 @@ const refrenceContainerLoader = document.querySelector('.template');
 
 const apiCallOnLoad = () =>{
     const apiObjectLoad = new XMLHttpRequest(); 
-    apiObjectLoad.open('GET', `https://youtube-v31.p.rapidapi.com/search?q=c++programming%20&part=snippet%2Cid&regionCode=in&maxResults=50&order=relevance`);
+    apiObjectLoad.open('GET', `https://youtube-v31.p.rapidapi.com/search?q=Dhruv%20Rathee&part=snippet%2Cid&regionCode=in&maxResults=50&order=relevance`);
     
     apiObjectLoad.setRequestHeader('X-RapidAPI-Key','00df45cbdfmshf650d2235a6eceap1e9556jsn67885b5ff73c');
     apiObjectLoad.setRequestHeader('X-RapidAPI-Host', 'youtube-v31.p.rapidapi.com');
 
     apiObjectLoad.onload = () =>{
         const loadData = JSON.parse(apiObjectLoad.response); 
-        // console.log(loadData); 
         let countLoad = 0; 
         while(countLoad <= 49){
             let valueToBeInsertedLoad = `

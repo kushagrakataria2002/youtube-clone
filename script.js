@@ -1,9 +1,6 @@
-const sideBarBtn = document.querySelector(".toogler"); 
-const sideBar = document.querySelector('.unorderedList'); 
 const searchIcon = document.querySelector('.searchLogo'); 
 const inputField = document.querySelector('#default-input'); 
 const refrenceContainer = document.querySelector('.template'); 
-const cards = document.querySelector('.cards'); 
 
 const apiCallOnSearch = () =>{
     const apiObject = new XMLHttpRequest(); 
@@ -13,13 +10,12 @@ const apiCallOnSearch = () =>{
     apiObject.setRequestHeader('X-RapidAPI-Host', 'youtube-v31.p.rapidapi.com');
 
     apiObject.onload = () =>{
-        const data = JSON.parse(apiObject.response); 
-        console.log(data); 
+        const data = JSON.parse(apiObject.response);  
         let count = 0; 
         while(count <= 49){
             let valueToBeInserted = `
-            <div class="cards hover:cursor-pointer lg:w-2/6 md:w-1/2 sm:w-3/5 p-4 w-full">
-                <a href = "player.html"class="block relative h-48 rounded overflow-hidden">
+            <div class="cards hover:cursor-pointer lg:w-2/6 md:w-1/2 sm:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
                     <img alt="ecommerce" class="object-cover object-center w-full h-full block" src='${data.items[count].snippet.thumbnails.high.url}'>
                 </a>
                 <div class="mt-4">
@@ -36,21 +32,7 @@ const apiCallOnSearch = () =>{
     apiObject.send(); 
 }; 
 
-
-// sideBarBtn.addEventListener("click", () =>{
-//     sideBar.classList.toggle("hidden"); 
-// });
-
-inputField.addEventListener("keypress", (event) =>{
-    if(event.key === "Enter"){
-        apiCallOnSearch(); 
-    }
-}); 
-
 searchIcon.addEventListener('click', () =>{
     apiCallOnSearch(); 
 }); 
 
-cards.addEventListener('click', () =>{
-    alert('hello'); 
-}); 
