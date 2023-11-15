@@ -13,7 +13,7 @@ const apiCallOnLoad = () =>{
         while(countLoad <= 49){
             let valueToBeInsertedLoad = `
             <div class="hover:cursor-pointer lg:w-2/6 md:w-1/2 sm:w-1/2 h-3/5 p-4 w-full">
-                <a href = "player.html"class="block relative h-48 rounded overflow-hidden">
+                <a class="block relative h-48 rounded overflow-hidden">
                     <img alt="ecommerce" class="object-cover object-center w-full h-full block" src='${loadData.items[countLoad].snippet.thumbnails.high.url}'>
                 </a>
                 <div class="mt-4">
@@ -30,5 +30,5 @@ const apiCallOnLoad = () =>{
 };
 
 window.addEventListener('load', () =>{
-    apiCallOnLoad(); 
+    apiCallOnLoad();
 }); 

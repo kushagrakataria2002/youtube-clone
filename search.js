@@ -11,6 +11,7 @@ const apiCallOnSearch = () =>{
 
     apiObject.onload = () =>{
         const data = JSON.parse(apiObject.response);  
+        console.log(data);
         let count = 0; 
         while(count <= 49){
             let valueToBeInserted = `
@@ -35,4 +36,5 @@ const apiCallOnSearch = () =>{
 searchIcon.addEventListener('click', () =>{
     apiCallOnSearch(); 
 }); 
+
 
