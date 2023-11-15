@@ -16,6 +16,7 @@
     margin-left: 2px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    cursor:pointer; 
 }
 #default-input{
     width:500px; 
@@ -46,12 +47,19 @@
     cursor: pointer;
 }
 
-
-/* media queries  */
-
-@media screen and (max-width: 817px) {
-    .cardContainer{
-        justify-content: center;
-    }
+.toogler{
+    cursor:pointer; 
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
 }
 
+@media (max-width:780px){
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
